@@ -1,0 +1,30 @@
+﻿<Window x:Class="Minesweeper.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Minesweeper"
+        mc:Ignorable="d"
+        Title="Settings" Height="150" Width="275" ResizeMode="NoResize">
+    <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="2" Margin="20,5,20,5" Background="#efefef">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Size X:" Margin="2"/>
+                <TextBlock Text="Size Y:" Margin="2"/>
+                <TextBlock Text="Num Mines:" Margin="2"/>
+                <TextBlock Text="Cell Size:" Margin="2"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBox Name="TB_SizeX" Width="50" Margin="2"/>
+                <TextBox Name="TB_SizeY" Width="50" Margin="2"/>
+                <TextBox Name="TB_NumMines" Width="50" Margin="2"/>
+                <TextBox Name="TB_CellSize" Width="50" Margin="2"/>
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
